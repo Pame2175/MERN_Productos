@@ -70,7 +70,7 @@ const ProductList = ({ products, setProducts }) => {
                             <td>{product.description}</td>
                             <td>
                                 <Link to={`/product/${product._id}`} className="btn btn-outline-primary btn-sm me-1">Detalle</Link>
-                                <Link to={`/product/${product._id}/update`} className="btn btn-outline-warning btn-sm me-1">Actualizar</Link>
+                                <Link to={`/product/${product._id}/edit`} className="btn btn-outline-warning btn-sm me-1">Actualizar</Link>
                                 <button onClick={() => deleteProduct(product._id)} className="btn btn-outline-danger btn-sm">Eliminar</button>
                             </td>
                         </tr>
